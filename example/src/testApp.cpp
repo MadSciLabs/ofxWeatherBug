@@ -6,7 +6,7 @@ void testApp::setup(){
     ofBackground(255);
     
     // setup the bugWeather object
-    bug.setup("A4452472593", "10014", false);
+    bug.setup("YOUR_API_KEY", "ZIP_CODE", false);
     
     // this is one way you can make requests and get the data parsed
     
