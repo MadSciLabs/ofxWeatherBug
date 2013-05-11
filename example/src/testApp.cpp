@@ -9,8 +9,7 @@ void testApp::setup(){
     bUnitsMetric = false;
     
     // setup the bugWeather object
-    //bug.setup("YOU_API_KEY", "ZIP_CODE", bUnitsMetric);
-    bug.setup("A4452472593", "10014", bUnitsMetric);
+    bug.setup("YOU_API_KEY", "ZIP_CODE", bUnitsMetric);
 
     
     // this is one way you can make requests and get the data parsed
