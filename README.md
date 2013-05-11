@@ -1,8 +1,9 @@
 ofxWeatherBug
 =============
 
-very simple openframeworks addon to retrieve and parse weather data via the weatherBug API (xml)
-current data feed features:
+very simple openframeworks addon to retrieve and parse weather data via the weatherBug API (xml).
+
+currently retrieves:
 
 *current condition (text + img)
 
@@ -23,5 +24,4 @@ current data feed features:
 *moon phase icon (img)
 
 -option to retrieve data  either in metric/Centrigrades or imperial/Fahrenheit units
--retrieve current weather condition image/icon with transparency
-
+-manual or automatic (timer) calls
