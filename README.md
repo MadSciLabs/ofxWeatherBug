@@ -24,4 +24,5 @@ currently retrieves:
 *moon phase icon (img)
 
 -option to retrieve data  either in metric/Centrigrades or imperial/Fahrenheit units
+
 -manual or automatic (timer) calls
