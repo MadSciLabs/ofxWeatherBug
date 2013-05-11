@@ -24,6 +24,7 @@ class testApp : public ofBaseApp{
     string info;
     wData DATA;
     
-    ofTrueTypeFont med, light;
+    ofTrueTypeFont med, light, smallLight;
+    bool bUnitsMetric;
 
 };

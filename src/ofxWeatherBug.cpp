@@ -94,7 +94,7 @@ wData ofxWeatherBug::getWeather(){
             string contentFirst = ofSplitString(content, ">")[1];
             string contentRain = ofSplitString(contentFirst, "<")[0];
             DATA.rainAmount = ofToFloat(contentRain);
-            cout<< "rain \" "<<DATA.rainAmount <<endl;
+//            cout<< "rain \" "<<DATA.rainAmount <<endl;
 
         }
         
@@ -167,7 +167,12 @@ wData ofxWeatherBug::getWeather(){
         if (foundConditionIMG != 0) {
             string content = rawDATA.substr(matchConditionIMG.offset, matchConditionIMG.length);
             string conditionIMG = ofSplitString(content, "\"")[1];
+            ofStringReplace(conditionIMG, ".gif", ".png");
+
+            ofStringReplace(conditionIMG, "http://deskwx.weatherbug.com/images/Forecast/icons/", "http://img.weather.weatherbug.com/forecast/icons/localized/50x42/en/trans/");
+            ofStringReplace(conditionIMG, ".gif", ".png");
 //            cout << conditionIMG <<endl;
+            
             if (!DATA.conditionIMG.loadImage(conditionIMG)) {
                 ofLog(OF_LOG_ERROR, "something went wrong.. no IMG, no fun!");
             }
