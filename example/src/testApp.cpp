@@ -6,9 +6,9 @@ void testApp::setup(){
     ofBackground(255);
     ofEnableAlphaBlending();
     
-    bUnitsMetric = false;
+    bUnitsMetric = true;
     
-    // setup the bugWeather object
+    // setup the bugWeather object - you'll need to get your API key from Weather bug: 
     bug.setup("YOU_API_KEY", "ZIP_CODE", bUnitsMetric);
 
     
