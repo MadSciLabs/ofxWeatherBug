@@ -10,7 +10,6 @@ void testApp::setup(){
     
     // setup the bugWeather object - you'll need to get your API key from Weather bug: 
     bug.setup("YOU_API_KEY", "ZIP_CODE", bUnitsMetric);
-
     
     // this is one way you can make requests and get the data parsed
     DATA = bug.getWeather();
@@ -56,7 +55,7 @@ void testApp::draw(){
     med.drawString(ofToString(DATA.rainAmount), 280, 240);
     
     light.drawString("Wind Speed", 20, 280);
-    if (bUnitsMetric) smallLight.drawString("Kmh", 260+10+ med.getStringBoundingBox(ofToString(DATA.windSpeed),260, 270).width,270);
+    if (bUnitsMetric) smallLight.drawString("Kmh", 280+10+ med.getStringBoundingBox(ofToString(DATA.windSpeed),260, 270).width,270);
     else smallLight.drawString("Mph", 280+10+ med.getStringBoundingBox(ofToString(DATA.windSpeed),260, 270).width,270);
     med.drawString(ofToString(DATA.windSpeed), 280, 280);
     
