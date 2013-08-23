@@ -10,7 +10,7 @@ void testApp::setup(){
     
     // setup the bugWeather object - you'll need to get your API key from Weather bug: 
     bug.setup("YOU_API_KEY", "ZIP_CODE", bUnitsMetric);
-    
+
     // this is one way you can make requests and get the data parsed
     DATA = bug.getWeather();
 
