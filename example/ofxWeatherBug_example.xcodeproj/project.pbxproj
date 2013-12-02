@@ -249,6 +249,8 @@
 /* Begin PBXProject section */
 		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "ofxWeatherBug_example" */;
 			compatibilityVersion = "Xcode 2.4";
 			developmentRegion = English;
@@ -473,7 +475,8 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = ofxWeatherBug_exampleDebug;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx10.8;
+				VALID_ARCHS = "i386 x86_64 x86_32";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -560,7 +563,8 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = ofxWeatherBug_example;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx10.8;
+				VALID_ARCHS = "i386 x86_64 x86_32";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
