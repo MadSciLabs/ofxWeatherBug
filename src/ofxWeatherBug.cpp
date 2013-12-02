@@ -13,7 +13,7 @@ using Poco::RegularExpression;
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 void ofxWeatherBug::setup(string _apiKEY, string _zipCODE, bool _useMetricCentigrade){
     startTIME = ofGetElapsedTimeMillis();
-    URL = "http://api.wxbug.net/getLiveWeatherRSS.aspx?ACode=" + _apiKEY +"&zipcode="+ _zipCODE +"&unittype="+ ofToString(_useMetricCentigrade);
+    URL = "http://i.wxbug.net/REST/SP/getLiveWeatherRSS.aspx?api_key=" + _apiKEY +"&zipCode="+ _zipCODE +"&UnitType="+ ofToString(_useMetricCentigrade);
 
 
 }
