@@ -15,7 +15,7 @@ void ofxWeatherBug::setup(string _apiKEY, string _zipCODE, bool _useMetricCentig
     startTIME = ofGetElapsedTimeMillis();
     
     // create call URL from user data = api key +  zip code
-    URL = "http://i.wxbug.net/REST/SP/getLiveWeatherRSS.aspx?api_key=" + _apiKEY +"&zipCode="+ _zipCODE +"&UnitType="+ ofToString(_useMetricCentigrade);
+    URL = "http://api.wxbug.net/getLiveWeatherRSS.aspx?ACode=" + _apiKEY +"&zipCode="+ _zipCODE +"&UnitType="+ ofToString(_useMetricCentigrade);
 
 
 }
